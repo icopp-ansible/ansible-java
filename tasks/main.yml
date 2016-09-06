@@ -1,0 +1,5 @@
+---
+- name: Install Java via Homebrew Cask
+  homebrew_cask:
+    name: java
+  when: ansible_os_family == "Darwin"
